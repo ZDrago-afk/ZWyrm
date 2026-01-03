@@ -200,18 +200,10 @@ Use at your own risk. The authors are **not responsible** for any damage caused 
 **Important:** Always run in **Safe Mode first** and thoroughly test in a controlled environment before enabling **Enforce Mode** in production.
 
 
-
-## 🌟 Acknowledgments & Support
-
-| Topic           | Details                                                                                     |
-|----------------|---------------------------------------------------------------------------------------------|
-| Acknowledgments | - Inspired by various open-source security tools and frameworks <br> - MITRE ATT&CK framework for comprehensive threat modeling <br> - The Linux community for invaluable resources and tools |
-| Support         | - 📧 Email: support@zwyrm.security <br> - 🐛 GitHub Issues: [Report an Issue](https://github.com/yourusername/zwyrm/issues) <br> - 📖 Documentation: [Read the Docs](https://zwyrm.readthedocs.io) |
-
-
 ## 🌟 Acknowledgments & Support
 
 ### Acknowledgments
 - Inspired by various open-source security tools and frameworks
 - MITRE ATT&CK framework for comprehensive threat modeling
 - The Linux community for invaluable resources and tools
+
