@@ -38,22 +38,22 @@ sudo ./scripts/install.sh
 
 ### Manual Installation
 
-# 1. Install Python dependencies
+#### 1. Install Python dependencies
 sudo pip3 install -r requirements.txt
 
-# 2. Create necessary directories
+#### 2. Create necessary directories
 sudo mkdir -p /opt/zwyrm
 sudo mkdir -p /var/log/zwyrm
 sudo mkdir -p /etc/zwyrm
 
-# 3. Copy files
+#### 3. Copy files
 sudo cp -r . /opt/zwyrm/
 
-# 4. Set permissions
+#### 4. Set permissions
 sudo chmod 755 /opt/zwyrm/main.py
 sudo chmod 644 /opt/zwyrm/config/zwyrm.yaml
 
-# 5. Install systemd service (optional)
+#### 5. Install systemd service (optional)
 sudo cp systemd/zwyrm.service /etc/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl enable zwyrm.service
@@ -206,4 +206,5 @@ Use at your own risk. The authors are **not responsible** for any damage caused 
 - Inspired by various open-source security tools and frameworks
 - MITRE ATT&CK framework for comprehensive threat modeling
 - The Linux community for invaluable resources and tools
+
 
