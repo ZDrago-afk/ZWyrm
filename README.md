@@ -1,4 +1,4 @@
-# ZWyrmv0 - Red-Team–Informed Behavioral Antivirus for Linux
+# ZWyrm_v0 - Red-Team–Informed Behavioral Antivirus for Linux
 
 ![ZWyrm Banner](assets/zwyrm.png)
 
@@ -206,6 +206,7 @@ Use at your own risk. The authors are **not responsible** for any damage caused 
 - Inspired by various open-source security tools and frameworks
 - MITRE ATT&CK framework for comprehensive threat modeling
 - The Linux community for invaluable resources and tools
+
 
 
 
