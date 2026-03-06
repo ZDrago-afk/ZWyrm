@@ -1,0 +1,28 @@
+# ZWYRM AntiVirus — Python Dependencies
+# ========================================
+# Install with: pip install -r requirements.txt
+
+# Core (Required)
+psutil>=5.9.0           # System/process utilities
+PyYAML>=6.0             # YAML config parsing
+requests>=2.28.0        # HTTP for signature updates
+schedule>=1.1.0         # Task scheduling
+colorama>=0.4.6         # Coloured output (Windows compat)
+
+# File monitoring (for real-time protection — Linux only)
+pyinotify>=0.9.6        # inotify filesystem events
+
+# File analysis (Recommended)
+python-magic>=0.4.27    # MIME type detection (needs libmagic1)
+pefile>=2023.2.7        # Windows PE analysis on any OS
+
+# Optional advanced features
+# yara-python>=4.2.0    # YARA rule matching (needs system yara)
+# lief>=0.12.0          # Deep binary analysis
+# scikit-learn>=1.3.0   # ML-based detection
+# numpy>=1.24.0         # ML numerical computations
+
+# System library notes:
+#   python-magic: sudo apt-get install libmagic1
+#   yara-python:  sudo apt-get install yara
+#   pyinotify:    Linux only (inotify kernel subsystem)

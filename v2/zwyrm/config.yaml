@@ -1,0 +1,66 @@
+zwyrm:
+  version: "2.0"
+  name: "ZWYRM AntiVirus"
+  debug_mode: false
+  enable_telemetry: false
+
+scanning:
+  max_file_size: 100
+  scan_depth: 10
+  max_threads: 4
+  exclude_paths: ["/proc", "/sys", "/dev", "/run", "/snap"]
+  exclude_extensions: [".iso", ".img", ".vmdk", ".vdi"]
+  quick_scan_paths: ["/tmp", "/var/tmp", "~/Downloads", "~/Desktop"]
+  system_scan_paths: ["/bin", "/sbin", "/usr/bin", "/usr/local/bin", "/etc", "/home"]
+
+detection:
+  enable_signature_based: true
+  enable_heuristics: true
+  enable_string_scan: true
+  enable_entropy_check: true
+  entropy_threshold: 6.5
+  max_string_scan_size: 10
+
+quarantine:
+  auto_quarantine: true
+  ask_before_quarantine: false
+  max_quarantine_size: 1024
+  auto_cleanup_days: 30
+
+updates:
+  auto_update: true
+  check_on_startup: false
+  update_check_interval: 24
+
+realtime:
+  enabled: false
+  monitor_paths: ["~/Downloads", "~/Desktop", "/tmp"]
+  exclude_paths: ["~/.cache"]
+  scan_delay: 2
+  action_on_detection: "quarantine"
+
+scheduler:
+  enabled: false
+  daily_scan:
+    enabled: true
+    time: "02:00"
+    type: "quick"
+  weekly_scan:
+    enabled: true
+    day: "sunday"
+    time: "03:00"
+    type: "full"
+
+logging:
+  level: "INFO"
+  file: "logs/zwyrm.log"
+  max_size: 10
+  backup_count: 5
+  enable_json_log: true
+
+performance:
+  max_cpu_usage: 80
+  enable_hash_cache: true
+  cache_ttl: 3600
+  use_mmap: true
+  thread_pool_size: 4
