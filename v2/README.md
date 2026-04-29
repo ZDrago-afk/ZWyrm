@@ -159,20 +159,36 @@ ZWyrm is configured through `config.yaml` inside the `v2` directory.
 Example configuration:
 
 zwyrm:
+
   debug_mode: false
+  
   log_level: INFO
+  
   max_file_size: 10485760
+  
   exclude_paths:
+  
     - /proc
+    
     - /sys
+    
     - /dev
+    
   scan_extensions:
+  
     - .exe
+    
     - .bin
+    
+    
     - .sh
+    
     - .py
+  
   auto_update: true
+  
   update_interval: 86400
+
 
 ## 📊 Logging
 
