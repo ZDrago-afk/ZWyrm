@@ -104,7 +104,9 @@ sudo ln -s $(pwd)/zwyrm.py /usr/local/bin/zwyrm
 ## 🎮 Usage
 
 zwyrm help
+
 zwyrm version
+
 zwyrm info
 
 # Scan directory
