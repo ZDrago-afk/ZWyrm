@@ -88,6 +88,7 @@ Optional dependency:
 Clone the repository:
 
 git clone https://github.com/ZDrago-afk/ZWyrm.git
+
 cd ZWyrm
 
 Run the installation script:
