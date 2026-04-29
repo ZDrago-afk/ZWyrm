@@ -166,28 +166,46 @@ pip install pyinotify
 ZWyrm uses `config.yaml` for customization.
 
 Example configuration:
+
 zwyrm:
+
   debug_mode: false
+  
   log_level: INFO
+  
   max_file_size: 10485760
+  
   exclude_paths:
+  
     - /proc
+    
     - /sys
+    
     - /dev
+    
   scan_extensions:
+  
     - .exe
+    
     - .bin
+    
     - .sh
+    
     - .py
+    
   auto_update: true
+  
   update_interval: 86400
 
   ## 📊 Logging
 
 Logs are stored inside the logs/ directory.
+
 View logs in real-time:
 
+
 tail -f logs/scanner.log
+
 tail -f logs/quarantine.log
 
 ## 🔒 Security Considerations
